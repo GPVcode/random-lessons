@@ -1,0 +1,44 @@
+body {
+    /* set the body margin to zero because the body has a default margin that can mess with position and sizing */
+    margin: 0;
+}
+
+#wrapper {
+    background-color: deepskyblue;
+    /* background-color will take up 50% of the screen height*/
+    height: 50vh;
+    /* enter the flex box. by default, children of flexbox are ordered horizontally. */
+    display: flex;
+    /* we'll use justify-content property to horizontally align items within the flexbox. OPTIONS: center, flex-start, flex-end, space-evenly, space-around, space-between */
+    justify-content: space-evenly;
+    /* we use align-items property to align items vertically within the flexbox. OPTIONS: center, flex-start, flex-end (there's more but these are the ones to care about)*/
+    align-items: flex-start;
+    /* flex wrap allows an items that have larger width than available on the line to use the next line over. AKA <em>responsive design</em>*/
+    /* flex-wrap: wrap; UPDATE:we removed flex wrap*/
+    /* we'll use flex-direction to make our items go vertically.  */
+    /* flex-direction: column; UPDATE: We removed flex-direction from the model */
+
+}
+
+/* We will now show CSS ability to conveniently reorder div items */
+#div1 {
+    order: 1;
+}
+
+#div2 {
+    order: 0;
+}
+
+#div3 {
+    order: 2;
+}
+
+.inner_div {
+    background-color: whitesmoke;
+    /* makes it easier to look at */
+    padding: 15px;
+    /* to see where the edges are */
+    border: 2px solid black;
+    width: 50px;
+    height: 50px;
+}
